@@ -1,0 +1,18 @@
+const findZeroPair = (numbers) => {
+  for (let i = 0; i < numbers.length; i++) {
+    const firstElem = numbers[i];
+
+    for (let j = i + 1; j < numbers.length; j++) {
+      const secondElem = numbers[j];
+      const sum = firstElem + secondElem;
+
+      if (sum === 0) {
+        return [i, j];
+      }
+    }
+  }
+
+  return [];
+};
+
+findZeroPair([1, 2, 3, 4, -1, 4, -1]);

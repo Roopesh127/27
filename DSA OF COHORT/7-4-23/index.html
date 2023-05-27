@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<!-- 
+
+*****
+****
+***
+**
+*
+ 
+<script>
+   for(let i=5;i>=1;i--){
+    let row='';
+    for(let j=i;j>=1;j--){
+        row += "*";
+    }
+    console.log(row);
+   }
+ </script> -->
+
+
+<!--
+*****
+*****
+*****
+*****
+***** 
+
+for (let i = 1; i <= 5; i++) {
+  let row = '';
+  for (let j = 1; j <= 5; j++) {
+    row += '*';
+  }
+  console.log(row);
+}-->
+
+
+
+
+    <!-- *
+        **
+       ***
+      ****
+     *****
+
+let n = 5;
+let pattern = "";
+for (let i = 1; i <= n; i++) {
+  // printing spaces
+  for (let j = 0; j < n - i; j++) {
+    pattern += " ";
+  }
+  // printing star
+  for (let k = 0; k < i; k++) {
+    pattern += "*";
+  }
+  pattern += "\n";
+}
+console.log(pattern);
+
+
+
+
+            *
+           ***
+          *****
+         *******
+        *********
+
+   let n = 5;
+let star = "";
+// External loop
+for (let i = 1; i <= n; i++) {
+  // printing spaces
+  for (let j = 1; j <= n - i; j++) {
+    star += " ";
+  }
+  // printing star
+  for (let k = 0; k < 2 * i - 1; k++) {
+    star += "*";
+  }
+  star += "\n";
+}
+console.log(star);
+
+         *
+        * *
+       *   *
+      *     *
+     *********
+
+     let n = 5;
+let star = "";
+
+// External loop
+for (let i = 1; i <= n; i++) {
+  // printing spaces
+  for (let j = 1; j <= n - i; j++) {
+    star += " ";
+  }
+  // printing star
+  for (let k = 0; k < 2 * i - 1; k++) {
+    if(i === 1 || i === n) {
+      star += "*";
+    }
+    else {
+      if(k === 0 || k === 2 * i - 2) {
+        star += "*";
+      }
+      else {
+        star += " ";
+      }
+    }
+  }
+  star += "\n";
+}
+console.log(star); -->
